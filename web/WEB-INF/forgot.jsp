@@ -14,13 +14,14 @@
     </head>
     <body>
         <h1>Forgot Password</h1>
-        Please enter your email address to retrieve your password.<br>
+        <p>Please enter your email address to retrieve your password.</p>
         <form actioin="forgot" method="post">
-            Email:<input type="email" name="email">
+            Email:<input type="email" name="email"><br>
             <input type="submit" value="Submit">
         </form>
         <p>
-            <c:if test="${message eq 'sent'}">If the address you entered is valid, you will receive an email very soon. Please check your email for your password.</c:if>
+            <c:if test="${message eq 'sent'}">If the address you entered is valid, you will receive an email very soon. <br>
+                Please check your email for your password.</c:if>
         </p>
     </body>
 </html>
